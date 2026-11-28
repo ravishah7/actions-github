@@ -21,9 +21,6 @@ jobs:
 
       - name: Install Linter
         run: npm install eslint --save-dev
-
-      - name: Setup ESlint config file
-        run: npm init @eslint/config@latest
       
       - name: Run ESlint #require Eslint in package.json scripts
         run: npm run lint
